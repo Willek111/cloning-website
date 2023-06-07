@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> My Project</title>
+	<link rel="stylesheet" type="text/css" href="Social Book.css">
+
+</head>
+<body>
+
+	<nav>
+		<div class="nav-left">
+
+			<img src="images/logo.png" alt="This is my logo" class="logo">
+			<ul>
+				<li><img src="images/notification.png"></li>
+				<li><img src="images/inbox.png"></li>
+				<li><img src="images/video.png"></li>
+			</ul>
+		</div>
+
+		<div class="nav-right">
+
+			<div class="search-box">
+				<img src="images/search.png">
+				<input type="text" name="text" placeholder="search" autocomplete = "on" autofocus>
+			</div>
+
+			<div class="nav-user-icon online" onclick="settingsMenuToggle()">
+				<img src="work/willy.jpg"></div>
+			</div>
+		</div>
+
+<!-- This is the Setting Menu for the drop down of our Profile picture at the nav bar -->
+
+		<div class="settings-menu">
+
+			<div id="dark-btn" class="dark-btn-on" onclick="darkBtnOn()">
+				<span></span>
+			</div>
+
+			<div class="settings-menu-inner">
+				
+				<div class="user-profile">
+					<img src="work/willy.jpg" width="120px" height="auto">
+					<div>
+						<p>Okenyeka Williams</p>
+						<a href="Profile Page.html">See Your Profile</a>
+					</div>
+				</div>
+				<hr>
+				<div class="user-profile">
+					<img src="images/feedback.png" width="120px" height="auto">
+					<div>
+						<p>Give Feedback</p>
+						<a href="#">Help me improve in my design</a>
+					</div>
+				</div>
+				<hr>
+
+				<div class="settings-links">
+					<img src="images/setting.png" class="settings-icon">
+					<a href="#">Settings & Privacy</a><img src="images/arrow.png" width="10px">
+				</div>
+
+				<div class="settings-links">
+					<img src="images/help.png" class="settings-icon">
+					<a href="#">Help & Support</a><img src="images/arrow.png" width="10px">
+				</div>
+
+				<div class="settings-links">
+					<img src="images/display.png" class="settings-icon">
+					<a href="#">Display & Accessibility</a><img src="images/arrow.png" width="10px">
+				</div>
+
+				<div class="settings-links">
+					<img src="images/logout.png" class="settings-icon">
+					<a href="#">Logout</a><img src="images/arrow.png" width="10px">
+				</div>
+			</div>
+			<!-- <div class="write-post-container"> -->
+
+				
+			</div>
+
+	</nav>
+
+<!-- The body of the site starts here -->
+	<div class="container">
+
+		<!-- Left Sidebar starts here -->
+		<div class="left-sidebar">
+			<div class="imp-links">
+				<a href="#"><img src="images/news.png"> Latest News</a>
+				<a href="#"><img src="images/friends.png"> Friends</a>
+				<a href="#"><img src="images/group.png"> Group</a>
+				<a href="#"><img src="images/marketplace.png"> Market Place</a>
+				<a href="#"><img src="images/watch.png">Watch</a>
+				<a href="#">See More</a>
+			</div>
+
+			<div class="shortcut-links">
+				<p>Your Shortcuts</p>
+				<a href="#"><img src="images/shortcut-1.png">Web Developers</a>
+				<a href="#"><img src="images/shortcut-2.png">Web Design Course</a>
+				<a href="#"><img src="images/shortcut-3.png">Full Stack development</a>
+				<a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+			</div>
+		</div>
+<!-- This is where the header stops -->
+
+<!-- The main content starts here -->
+		<div class="main-content">
+			
+			<div class="story-gallery">
+				<div class="story story1">
+					<img src="images/upload.png">
+					<p>Post story</p>
+				</div>
+
+				<div class="story story2">
+					<img src="work/dubex.jpg">
+					<p>Dubex</p>
+				</div>
+
+				<div class="story story3">
+					<img src="work/daddy.png">
+					<p>Anya of Abba</p>
+				</div>
+
+				<div class="story story4">
+					<img src="work/bee.png">
+					<p>HerBeeSorLah</p>
+				</div>
+			</div>
+
+			<div class="write-post-container">
+				<div class="user-profile">
+					<img src="work/willy.jpg" width="120px" height="auto">
+					<div>
+						<p>Okenyeka Williams</p>
+						<small>Public </small>
+					</div>
+				</div>
+
+				<div class="post-input-container">
+					<textarea cols="" rows="3" placeholder="What's on your mind, Williams?"></textarea>
+					<div class="add-post-links">
+						<a href="#"><img src="images/live-video.png"> Live Video</a>
+						<a href="#"><img src="images/photo.png"> Photo</a>
+						<a href="#"><img src="images/feeling.png"> Feeling/Activity</a>	
+					</div>
+				</div>
+			</div>
+
+			<div class="post-container">
+
+				<div class="post-row">
+					
+					<div class="user-profile">
+					<img src="work/willy.jpg" width="120px" height="auto">
+					<div>
+						<p>Okenyeka Williams</p>
+						<span>Feb 2 2023, 13:40pm</span>
+					</div>
+				</div>
+				<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+				</div>
+				
+				
+				<p class="post-text">Thank God for a succesful graduation from Unizik. Special thanks to my family and friends who were there for me all through. </p>
+				<img src="work/grad.jpg" width="100%" class="post-img">
+
+				<div class="post-row">
+					<div class="activity-icons">
+						<div class="profile-icon"><img src="images/like-blue.png">300</div>
+						<div class="profile-icon"><img src="images/comments.png">100</div>
+						<div class="profile-icon"><img src="images/share.png">59</div>		
+					</div>
+					<div class="post-profile-icon">
+						<img src="work/dubex.jpg"><i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="post-container">
+
+				<div class="post-row">
+					
+					<div class="user-profile">
+					<img src="work/gifty.jpg" width="120px" height="auto">
+					<div>
+						<p>Lawrence Gift</p>
+						<span>Feb 2 2023, 14:40pm</span>
+					</div>
+				</div>
+				<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+				</div>
+				
+				
+				<p class="post-text">Pretty Girl </a></p>
+				<img src="work/giftL.jpg" width="100%" class="post-img">
+
+				<div class="post-row">
+					<div class="activity-icons">
+						<div class="profile-icon"><img src="images/like-blue.png">300</div>
+						<div class="profile-icon"><img src="images/comments.png">100</div>
+						<div class="profile-icon"><img src="images/share.png">59</div>		
+					</div>
+					<div class="post-profile-icon">
+						<img src="work/dubex.jpg"><i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="post-container">
+
+				<div class="post-row">
+					
+					<div class="user-profile">
+					<img src="work/ezeudo.jpg" width="120px" height="auto">
+					<div>
+						<p>Fada Christian Umeojirinaka</p>
+						<span>Feb 2 2023, 14:40pm</span>
+					</div>
+				</div>
+				<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+				</div>
+				
+				
+				<p class="post-text">Eze Udo 1 of Anambra State </a></p>
+				<img src="work/ezeudo.jpg" width="100%" class="post-img">
+
+				<div class="post-row">
+					<div class="activity-icons">
+						<div class="profile-icon"><img src="images/like-blue.png">700</div>
+						<div class="profile-icon"><img src="images/comments.png">430</div>
+						<div class="profile-icon"><img src="images/share.png">159</div>		
+					</div>
+					<div class="post-profile-icon">
+						<img src="work/ezeudo.jpg"><i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+			</div>
+			<button type="button" class="load-more-btn">Load More</button>
+		</div>
+
+		
+
+
+<!--The right bar starts here  -->
+		<div class="right-sidebar">
+
+			<div class="sidebar-title">
+				<h4>Events</h4>
+				<a href="#">See All</a>
+			</div>
+
+			<div class="event">
+				<div class="left-event">
+					<h3>18</h3>
+					<span>March</span>
+				</div>
+
+				<div class="right-event">
+					<h4>Social Media</h4>
+					<div class="location-icon"><img src="location.png" width="12" height="12"> <p>Williams Tech Park</p></div>
+					<a href="#">More Info</a>
+				</div>
+			</div>
+
+			<div class="event">
+				<div class="left-event">
+					<h3>22</h3>
+					<span>June</span>
+				</div>
+
+				<div class="right-event">
+					<h4>Mobile Marketing</h4>
+					<div class="location-icon"><img src="location.png" width="12" height="12"> <p>Williams Tech Park</p></div>
+					<i></i><a href="#">More Info</a>
+				</div>
+			</div>
+
+			<div class="sidebar-title">
+				<h4>Advertisement</h4>
+				<a href="#">Close</a>
+			</div>
+			<img src="images/advertisement.png" class="sidebar-adds">
+
+			<div class="sidebar-title">
+				<h4>Conversation</h4>
+				<a href="#">Hide Chat</a>
+			</div>
+
+			<div class="chi-online">
+				<div class="chi-logo">
+					<img src="work/chi.jpg" width=120 height=auto>
+					<div class="dot-online"></div>
+				</div>
+				<p>Cindy Couture</p>
+			</div>
+			
+			<div class="chi-online">
+				<div class="chi-logo">
+					<img src="mom.jpg" width=120 height=auto>
+					<div class="dot-online"></div>
+				</div>
+				<p>Lolo 1 of Abba</p>
+			</div>
+			
+			<div class="chi-online">
+				<div class="chi-logo">
+					<img src="udo.jpg" width=120 height=auto>
+					<div class="dot-online"></div>
+				</div>
+				<p>Cindy Couture</p>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="footer">
+			<p>Copyright 2021 - FirstSon 11 Youtube Channel </p>
+		</div>
+	</footer>
+
+	<script src="Social Book.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="Social Book.css">
+
+</head>
+	<body>
+		<nav>
+			<div class="nav-left">
+				<a href="Social Book.html"><img src="images/logo.png" alt="This is my logo" class="logo"></a>
+				<ul>
+					<li><img src="images/notification.png"></li>
+					<li><img src="images/inbox.png"></li>
+					<li><img src="images/video.png"></li>
+				</ul>
+			</div>
+
+			<div class="nav-right">
+				
+				<div class="search-box">
+					<img src="images/search.png">
+					<input type="text" name="text" placeholder="search" autocomplete>
+				</div>
+
+				<div class="nav-user-icon" onclick="settingsMenuToggle()">
+					<img class="image.jpg" src="work/willy.jpg" >
+				</div>
+				<div class="onlines">
+						
+				</div>
+			</div>
+
+			<!-- This is the Setting Menu for the drop down of our Profile picture at the nav bar -->
+			<div class="settings-menu">
+
+				<div id="dark-btn" class="dark-btn-on" onclick="darkBtnOn()">
+					<span></span>
+				</div>
+
+				<div class="settings-menu-inner">
+					
+					<div class="user-profile">
+						<img src="work/daddy.png">
+						<div>
+							<p>Okenyeka Williams</p>
+							<a href="Social Book.html">Go to homepage</a>
+						</div>
+					</div>
+					<hr>
+					<div class="user-profile">
+						<img src="images/feedback.png" width="120px" height="auto">
+						<div>
+							<p>Give Feedback</p>
+							<a href="#">Help me improve in my design</a>
+						</div>
+					</div>
+					<hr>
+
+					<div class="settings-links">
+						<img src="images/setting.png" class="settings-icon">
+						<a href="#">Settings & Privacy</a><img src="images/arrow.png" width="10px">
+					</div>
+
+					<div class="settings-links">
+						<img src="images/help.png" class="settings-icon">
+						<a href="#">Help & Support</a><img src="images/arrow.png" width="10px">
+					</div>
+
+					<div class="settings-links">
+						<img src="images/display.png" class="settings-icon">
+						<a href="#">Display & Accessibility</a><img src="images/arrow.png" width="10px">
+					</div>
+
+					<div class="settings-links">
+						<img src="images/logout.png" class="settings-icon">
+						<a href="#">Logout</a><img src="images/arrow.png" width="10px">
+					</div>
+				</div>
+		</nav>
+			
+			<!-- This is where the profile page begins from -->
+
+		<div class="profile-container">
+
+			<img src="work/ree.jpg" class="cover-img">
+			<div class="profile-details">
+				<div class="pd-left">
+					<div class="pd-row">
+						<img src="work/gifty.jpg" class="pd-image">
+						<div>
+							<h3>Okenyeka Williams</h3>
+							<p>2000 Friends - 78 mutual</p>
+							<img src="work/udo.jpg">
+							<img src="work/bee.png">
+							<img src="work/chi.jpg">
+							<img src="work/sister.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="pd-right">
+					<button><img src="images/add-friends.png">Friend</button>
+					<button><img src="images/message.png">Message</button>
+					<br>
+					<a href="#"><img src="images/more.png"></a>
+				</div>
+			</div>
+
+			<div class="profile-info">
+				<div class="info-col">
+					
+					<div class="profile-intro">
+						<h3>Intro</h3>
+						<p class="intro-text">
+							Believe in yourself and you can do something unimagineable.
+							<img src="images/feeling.png">
+						</p>
+							<hr>
+							<ul>
+								<li><img src="images/profile-job.png">Director at Willek media Ltd</li>
+								<li><img src="images/profile-study.png">Studied at Unizik, Awk.</li>
+								<li><img src="images/profile-home.png">Lives at No 44 Jubrilla Street</li>
+								<li><img src="images/profile-location.png">Okota, Ago Palace</li>
+							</ul>
+					</div>
+
+					<div class="profile-intro">
+						<div class="title-box">
+							<h3>Photos</h3>
+							<a href="">All photos</a>
+						</div>
+						
+						<div class="photo-box">
+							<div><img src="work/red.jpg"></div>
+							<div><img src="work/myself.jpg"></div>
+							<div><img src="work/willyboy.jpg"></div>
+							<div><img src="work/blue.jpg"></div>
+							<div><img src="work/don.jpg"></div>
+							<div><img src="work/cap.jpg"></div>	
+						</div>
+					</div>	
+
+					<div class="profile-intro">
+						<div class="title-box">
+							<h3>Friends</h3>
+							<a href="">All Friends</a>
+						</div>
+							<p>120 (10 mutual)</p>
+						<div class="friends-box">
+							<div><img src="work/geeft.jpg"><p>Lawrence Gift</p></div>
+							<div><img src="work/willyboy.jpg"><p>Ella Chika</p></div>
+							<div><img src="work/chid.jpg"><p>Chidinma Agbo</p></div>
+							<div><img src="work/ogun.jpg"><p>Ogundero Michael</p></div>
+							<div><img src="work/ell.jpg">Chris Media</div>
+							<div><img src="work/ikenna.jpg"><p>Himself</p></div>
+						</div>
+					</div>			
+				</div>
+
+				<div class="post-col">
+					<div class="write-post-container">
+						<div class="user-profile">
+							<img src="work/willy.jpg" width="120px" height="auto">
+							<div>
+								<p>Okenyeka Williams</p>
+								<small>Public </small>
+							</div>
+						</div>
+
+						<div class="post-input-container">
+							<textarea cols="" rows="3" placeholder="What's on your mind, Williams?"></textarea>
+							<div class="add-post-links">
+								<a href="#"><img src="images/live-video.png"> Live Video</a>
+								<a href="#"><img src="images/photo.png"> Photo</a>
+								<a href="#"><img src="images/feeling.png"> Feeling/Activity</a>	
+							</div>
+						</div>
+					</div>
+
+					<div class="post-container">
+						<div class="post-row">
+							<div class="user-profile">
+								<img src="work/willy.jpg" width="120px" height="auto">
+									<div>
+										<p>Okenyeka Williams</p>
+										<span>Feb 2 2023, 13:40pm</span>
+									</div>
+							</div>
+								<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+						</div>
+					
+					
+						<p class="post-text">Thank God for a succesful graduation from Unizik. Special thanks to my family and friends who were there for me all through.</p>
+						<img src="work/grad.jpg" width="100%" class="post-img">
+
+
+						<div class="post-row">
+						<div class="activity-icons">
+							<div class="profile-icon"><img src="images/like-blue.png">300</div>
+							<div class="profile-icon"><img src="images/comments.png">100</div>
+							<div class="profile-icon"><img src="images/share.png">59</div>		
+						</div>
+						<div class="post-profile-icon">
+							<img src="work/dubex.jpg"><i class="fas fa-ellipsis-v"></i>
+						</div>
+					</div>
+
+						<div class="post-container">
+
+				<div class="post-row">
+					
+					<div class="user-profile">
+					<img src="work/gifty.jpg" width="100px">
+					<div>
+						<p>Lawrence Gift</p>
+						<span>Feb 2 2023, 14:40pm</span>
+					</div>
+				</div>
+				<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+				</div>
+				
+				
+				<p class="post-text">Pretty Girl </a></p>
+				<img src="work/giftL.jpg" width="100%" class="post-img">
+
+				<div class="post-row">
+					<div class="activity-icons">
+						<div class="profile-icon"><img src="images/like-blue.png">300</div>
+						<div class="profile-icon"><img src="images/comments.png">100</div>
+						<div class="profile-icon"><img src="images/share.png">59</div>		
+					</div>
+					<div class="post-profile-icon">
+						<img src="work/dubex.jpg"><i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+			</div>
+				
+			<div class="post-container">
+
+				<div class="post-row">
+					
+					<div class="user-profile">
+					<img src="work/ezeudo.jpg" width="120px" height="auto">
+					<div>
+						<p>Fada Christian Umeojirinaka</p>
+						<span>Feb 2 2023, 14:40pm</span>
+					</div>
+				</div>
+				<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+
+				</div>
+				
+				
+				<p class="post-text">Eze Udo 1 of Anambra State </a></p>
+				<img src="work/ezeudo.jpg" width="100%" class="post-img">
+
+				<div class="post-row">
+					<div class="activity-icons">
+						<div class="profile-icon"><img src="images/like-blue.png">700</div>
+						<div class="profile-icon"><img src="images/comments.png">430</div>
+						<div class="profile-icon"><img src="images/share.png">159</div>		
+					</div>
+					<div class="post-profile-icon">
+						<img src="work/ezeudo.jpg"><i class="fas fa-ellipsis-v"></i>
+					</div>
+				</div>
+			</div>	
+					</div>
+					
+				</div>
+			</div>
+
+			
+ 
+		</div>
+				
+		
+
+		<footer>
+			<div class="footer">
+				<p>Copyright 2021 - FirstSon 11 Youtube Channel </p>
+			</div>
+		</footer>
+
+		<script src="Social Book.js"></script>
+	</body>
+</html>
